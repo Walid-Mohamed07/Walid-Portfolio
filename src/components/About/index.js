@@ -26,13 +26,13 @@ const About = () => {
                         />
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quisquam est minima quaerat, neque saepe iure corporis praesentium eligendi, impedit similique veniam cum illum eum ducimus libero voluptas amet facere?
+                        Hello and welcome to my portfolio website! My name is Walid and I'm a web developer with a focus on frontend development. I specialize in creating beautiful and responsive websites using modern technologies like JavaScript and React JS. With 2 years of experience in the industry, I have worked with a variety of clients to help bring their ideas to life. I'm passionate about creating clean and efficient code that not only looks great but also delivers a seamless user experience.
                     </p>
-                    <p>
+                    {/* <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum beatae perferendis, eos quas aspernatur, accusamus voluptates nisi impedit, earum porro corporis eius soluta reprehenderit facere eum velit officiis? Nostrum, illum.
-                    </p>
+                    </p> */}
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam eos qui rem incidunt aspernatur a ab quo nobis esse voluptatibus omnis consequuntur laudantium corrupti quaerat enim. Nostrum, eius placeat.
+                        Thank you for taking the time to visit my website and please feel free to reach out if you have any questions or are interested in working together.
                     </p>
                 </div>
 

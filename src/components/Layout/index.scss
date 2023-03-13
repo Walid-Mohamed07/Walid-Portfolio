@@ -87,6 +87,17 @@
         max-height: 90%;
     }
 
+    .contact-zone {
+        position: absolute;
+        left: 60%;
+        top: 30%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+    }
+
     p {
         font-style: 13px;
         color: #fff;
