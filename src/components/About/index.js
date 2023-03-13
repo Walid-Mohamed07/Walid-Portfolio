@@ -37,6 +37,9 @@ const About = () => {
                 </div>
 
                 <div className='stage-cube-count'>
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
                     <div className='cubespinner'>
                         <div className='face1'>
                             <FontAwesomeIcon icon={faAngular} color="#DD0031" />
