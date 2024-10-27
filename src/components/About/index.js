@@ -2,7 +2,8 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faPhp, faNode, faSass, faGitAlt, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+// import { faAngular, faCss3, faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
 
 const About = () => {
@@ -10,7 +11,7 @@ const About = () => {
 
     useEffect(() => {
         setTimeout(() => {
-           setLetterClass('text-animate-hover');
+            setLetterClass('text-animate-hover');
         }, 3000);
     }, []);
 
@@ -26,7 +27,7 @@ const About = () => {
                         />
                     </h1>
                     <p>
-                        Hello and welcome to my portfolio website! My name is Walid and I'm a web developer with a focus on frontend development. I specialize in creating beautiful and responsive websites using modern technologies like JavaScript and React JS. With 2 years of experience in the industry, I have worked with a variety of clients to help bring their ideas to life. I'm passionate about creating clean and efficient code that not only looks great but also delivers a seamless user experience.
+                        Hello and welcome to my portfolio website! My name is Walid and I'm a web developer with a focus on frontend development. I specialize in creating beautiful and responsive websites using modern technologies like JavaScript, NEXT JS and React JS. With 3+ years of experience in the industry, I have worked with a variety of clients to help bring their ideas to life. I'm passionate about creating clean and efficient code that not only looks great but also delivers a seamless user experience.
                     </p>
                     {/* <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum beatae perferendis, eos quas aspernatur, accusamus voluptates nisi impedit, earum porro corporis eius soluta reprehenderit facere eum velit officiis? Nostrum, illum.
@@ -42,13 +43,13 @@ const About = () => {
                     <div id="stars3"></div>
                     <div className='cubespinner'>
                         <div className='face1'>
-                            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+                            <FontAwesomeIcon icon={faPhp} color="#8993be" />
                         </div>
                         <div className='face2'>
-                            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                            <FontAwesomeIcon icon={faNode} color="#3c873a" />
                         </div>
                         <div className='face3'>
-                            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                            <FontAwesomeIcon icon={faSass} color="#cc6699" />
                         </div>
                         <div className='face4'>
                             <FontAwesomeIcon icon={faReact} color="#5ED4F4" />

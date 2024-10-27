@@ -1,9 +1,9 @@
 import './index.scss';
-import {Link, NavLink} from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import LogoS from '../../assets/images/logo-w.png';
-import LogoSubtitle from '../../assets/images/logo_sub.png';
-import LinkedIn from '../../assets/icons/linkedin.svg';
+import { Link, NavLink } from 'react-router-dom';
+import { useState } from 'react';
+import LogoS from '../../assets/images/wIcon.webp';
+import LogoSubtitle from '../../assets/images/logo_sub.webp';
+// import LinkedIn from '../../assets/icons/linkedin.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faSuitcase, faUser, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faInstagram, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -41,7 +41,7 @@ const Sidebar = () => {
             </nav>
             <ul>
                 <li>
-                    <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/walid-mohamed-106626171/'>
+                    <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/walidmohamed07/'>
                         <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
                     </a>
                 </li>
@@ -51,12 +51,12 @@ const Sidebar = () => {
                     </a>
                 </li>
                 <li>
-                    <a target='_blank' rel='noreferrer' href='https://www.facebook.com/walid.mohamed.7146557/'>
+                    <a target='_blank' rel='noreferrer' href='https://www.facebook.com/WalidMohamed07/'>
                         <FontAwesomeIcon icon={faFacebook} color='#4d4d4e' />
                     </a>
                 </li>
                 <li>
-                    <a target='_blank' rel='noreferrer' href='https://www.instagram.com/walid_mohammad/'>
+                    <a target='_blank' rel='noreferrer' href='https://www.instagram.com/walidmohamed07/'>
                         <FontAwesomeIcon icon={faInstagram} color='#4d4d4e' />
                     </a>
                 </li>

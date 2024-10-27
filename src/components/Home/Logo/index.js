@@ -1,5 +1,5 @@
 import './index.scss';
-import LogoS from '../../../assets/images/logo-w.png';
+// import LogoS from '../../../assets/images/wIcon.webp';
 import ReactLogo from '../../../assets/images/logo512.png';
 import { useEffect, useRef } from 'react';
 // import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin';
@@ -38,11 +38,11 @@ const Logo = () => {
     // }, [])
 
     useEffect(() => {
-        setTimeout(function() {
+        setTimeout(function () {
             document.querySelector('.logo-container').style.opacity = 1;
             document.querySelector('.solid-logo').style.opacity = 1;
-          }, 4000);
-    },[])
+        }, 4000);
+    }, [])
 
     return (
         <div className='logo-container' ref={bgRef}>

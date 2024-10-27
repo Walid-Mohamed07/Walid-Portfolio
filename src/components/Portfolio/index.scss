@@ -40,7 +40,11 @@
             z-index: 3;
             padding: 10px 20px;
             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 1));
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.2) 0,
+                rgba(0, 0, 0, 1)
+            );
             bottom: -70px;
         }
 
@@ -75,17 +79,16 @@
             font-weight: 700;
             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             cursor: pointer;
-
-            &:hover {
-                transform: translateY(-3px);
-                color: #022c43;
-                background-color: #ffd700;
-            }
         }
 
-        &::after {
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #ffd700;
+        }
+
+        &:after {
             content: "";
-            background: linear-gradient(180deg, #022c43, #000);
+            background: linear-gradient(180deg, #ffd700, #000);
             position: absolute;
             left: 0;
             right: 0;
@@ -98,13 +101,32 @@
             opacity: 0;
         }
 
-        &:hover::after {
+        &:hover:after {
             opacity: 0.85;
         }
 
         &:hover .content {
             bottom: 0;
             background: transparent;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container.portfolio-page {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+
+        h1.page-title {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .image-box {
+            height: 200px;
+            flex: 1 1 100%;
+            max-width: calc(50% - 10px);
         }
     }
 }

@@ -16,7 +16,11 @@
     bottom: 0;
     left: 120px;
     font-size: 18px;
-    font-family: 'La Belle Aurore';
+    font-family: "La Belle Aurore";
+
+    @media screen and (min-width: 320px) and (max-width: 1080px) {
+        left: 50px;
+    }
 }
 
 .bottom-tag-html {
@@ -41,39 +45,38 @@
 .about-page,
 .contact-page,
 .portfolio-page {
-
     h1 {
-            font-size: 53px;
-            font-family: 'Coolvetica';
-            color: #ffd700;
-            font-weight: 400;
-            margin-top: 0;
-            position: relative;
-            margin-bottom: 40px;
-            left: 10px;
+        font-size: 53px;
+        font-family: "Coolvetica";
+        color: #ffd700;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: 10px;
 
-            &::before {
-                content: '<h1>';
-                font-family: 'La Belle Aurore';
-                font-size: 18px;
-                position: absolute;
-                margin-top: -10px;
-                left: -10px;
-                opacity: 0.6;
-                line-height: 18px;
-            }
-    
-            &::after {
-                content: '</h1>';
-                font-family: 'La Belle Aurore';
-                font-size: 18px;
-                line-height: 18px;
-                position: absolute;
-                left: -30px;
-                bottom: -20px;
-                margin-left: 20px;
-                opacity: 0.6;
-            }
+        &::before {
+            content: "<h1>";
+            font-family: "La Belle Aurore";
+            font-size: 18px;
+            position: absolute;
+            margin-top: -10px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+
+        &::after {
+            content: "</h1>";
+            font-family: "La Belle Aurore";
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -20px;
+            margin-left: 20px;
+            opacity: 0.6;
+        }
     }
 
     .text-zone {
@@ -88,18 +91,25 @@
     }
 
     .contact-zone {
+        // position: absolute;
+        // left: 60%;
+        // top: 30%;
+        // transform: translateY(-50%);
+        // width: 35%;
+        // vertical-align: middle;
+        // display: table-cell;
+        // max-height: 90%;
+
         position: absolute;
+        width: fit-content;
+        float: right;
+        top: 50%;
         left: 60%;
-        top: 30%;
-        transform: translateY(-50%);
-        width: 35%;
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 90%;
+        transform: translateY(-100%);
     }
 
     p {
-        font-style: 13px;
+        font-size: 13px;
         color: #fff;
         font-family: sans-serif;
         font-weight: 300;
@@ -122,6 +132,31 @@
     .text-animate-hover {
         &:hover {
             color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .page {
+        position: initial;
+    }
+
+    .container {
+        position: initial;
+        height: auto;
+        min-height: auto;
+
+        &.about-page,
+        &.contact-page,
+        &.portfolio-page {
+            .text-zone {
+                position: initial;
+                transform: none;
+                width: 100%;
+                display: block;
+                padding: 20px;
+                box-sizing: border-box;
+            }
         }
     }
 }
