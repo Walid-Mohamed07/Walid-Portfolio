@@ -13,11 +13,12 @@
     }
 
     h1 {
-        color: #fff;
-        font-size: 53px;
-        margin: 0;
         font-family: "Coolvetica";
+        line-height: 53px;
         font-weight: 400;
+        font-size: 53px;
+        color: #fff;
+        margin: 0;
 
         &::before {
             content: "<h1>";
@@ -44,7 +45,7 @@
 
         img {
             width: 32px;
-            margin-left: 20px;
+            margin-left: 10px;
             opacity: 0;
             height: auto;
             animation: rotateIn 1s linear both;
@@ -84,7 +85,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
     .tags,
     .home-page h1::before,
     .home-page h1::after {

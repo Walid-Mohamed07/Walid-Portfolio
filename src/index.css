@@ -1,10 +1,12 @@
-html{
+html {
   font-size: 62.5%;
 }
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Helvetica Neue', 'sans-serf';
+  font:
+    300 11px/1.4 "Helvetica Neue",
+    "sans-serf";
   color: #444;
   background: #022c43;
   overflow: hidden;
@@ -18,7 +20,7 @@ body {
   margin-left: 200px;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 960px) {
   body {
     overflow: visible;
   }

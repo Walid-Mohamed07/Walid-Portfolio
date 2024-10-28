@@ -8,7 +8,7 @@ import { useEffect, useRef } from 'react';
 const Logo = () => {
 
     const bgRef = useRef();
-    const outlineLogoRef = useRef();
+    // const outlineLogoRef = useRef();
     const solidLogoRef = useRef();
 
     // useEffect(() => {
