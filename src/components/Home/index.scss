@@ -97,7 +97,7 @@
             position: initial;
             width: 100%;
             transform: none;
-            padding: 10px;
+            padding: 10px 15px;
             box-sizing: border-box;
         }
 
@@ -127,5 +127,46 @@
             left: 0;
             margin: auto;
         }
+    }
+}
+
+@media (min-width: 1100px) and (min-height: 900px) {
+    h1 {
+        font-size: 73px !important;
+        line-height: 67px !important;
+    }
+
+    .home-page .text-zone #nameWord {
+        width: 75px;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 54px !important;
+        line-height: 45px !important;
+    }
+}
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: 47px !important;
+        line-height: 40px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-page h1::before,
+    .contact-page h1::before,
+    .portfolio-page h1::before {
+        line-height: unset;
+        margin-top: -29px;
+    }
+
+    .about-page h1::after,
+    .contact-page h1::after,
+    .portfolio-page h1::after {
+        line-height: unset;
+        bottom: -40px;
     }
 }

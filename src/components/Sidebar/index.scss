@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818;
-  width: 75px;
+  width: 62px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -160,6 +160,12 @@
     position: initial;
     height: auto;
     min-height: auto;
+
+    .logo {
+      display: block;
+      width: 100%;
+      padding: 8px 0 8px 7px;
+    }
 
     ul,
     nav {

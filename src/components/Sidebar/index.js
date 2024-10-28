@@ -49,9 +49,9 @@ const Sidebar = () => {
             <ul>
                 <li>
                     <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/walidmohamed07/'>
-                        <svg width="100" height="100">
+                        {/* <svg width="100" height="100">
                             {LinkedIn}
-                        </svg>
+                        </svg> */}
                         <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
                     </a>
                 </li>

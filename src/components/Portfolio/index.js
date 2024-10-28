@@ -29,7 +29,7 @@ const Portfolio = () => {
         setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
     }
 
-    console.log(portfolio);
+    // console.log(portfolio);
 
     const renderPortfolio = (portfolio) => {
         return (
@@ -58,13 +58,13 @@ const Portfolio = () => {
                 <h1 className="page-title">
                     <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={"Portfolio".split("")}
+                        strArray={"Projects".split("")}
                         idx={15}
                     />
                 </h1>
                 <div>{renderPortfolio(portfolio)}</div>
             </div>
-            <Loader type="pacman"/>
+            <Loader type="pacman" />
         </>
     )
 }
